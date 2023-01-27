@@ -162,7 +162,7 @@ ro.crypto.volume.metadata.method=dm-default-key
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
-debug.sf.latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 
 # Dolby
 vendor.audio.dolby.ds2.enabled=false
@@ -205,6 +205,7 @@ debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.hw=0
 debug.sf.set_idle_timer_ms=3000
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.auto_latch_unsignaled=0
 debug.sf.frame_rate_multiple_threshold=60
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
