@@ -2,7 +2,7 @@ echo 'Starting to clone stuffs needed for your device'
 echo 'Cloning Device Tree [1/5]'
 # vili Tree
 rm -rf device/xiaomi/vili
-git clone --depth=1 https://github.com/ProjectElixir-Devices/android_device_xiaomi_vili.git -b elixir device/xiaomi/vili
+git clone --depth=1 https://github.com/ProjectElixir-Devices/android_device_xiaomi_vili.git -b elixirA14 device/xiaomi/vili
 echo 'Cloning vili Vendor tree [2/5]'
 # Device Vendor Tree
 rm -rf vendor/xiaomi/vili
