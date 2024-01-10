@@ -135,6 +135,9 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 # MIUI camera stuff
 -include vendor/xiaomi/vili-miuicamera/products/board.mk
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := vili
 
