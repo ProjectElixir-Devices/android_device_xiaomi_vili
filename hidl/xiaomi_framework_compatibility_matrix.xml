@@ -1,5 +1,15 @@
 <compatibility-matrix version="1.0" type="framework">
     <hal format="hidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>dolby</instance>
+            <instance>software</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>com.fingerprints.extension</name>
         <version>3.0</version>
         <interface>
