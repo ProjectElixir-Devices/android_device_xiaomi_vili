@@ -53,6 +53,9 @@
 
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
+    
+     <!-- Whether to show Smooth Display feature in Settings Options -->
+    <bool name="config_show_smooth_display">true</bool>    
 
     <!-- Enable Fast Charge Preference -->
     <bool name="config_lineageFastChargeSupported">true</bool>
