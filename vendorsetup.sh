@@ -11,7 +11,7 @@ git clone --depth=1 https://github.com/ProjectElixir-Devices/android_vendor_xiao
 echo 'Cloning Kernel tree [3/5]'
 # Kernel Tree
 rm -rf kernel/xiaomi/sm8350
-git clone --depth=1 https://github.com/ThatMalayaliDeb/kernel_xiaomi_sm8350lineage.git -b lineage_14 kernel/xiaomi/sm8350
+git clone --depth=1 https://github.com/ProjectElixir-Devices/kernel_xiaomi_sm8350.git -b lineage-21 kernel/xiaomi/sm8350
 
 echo 'Cloning Hardware xiaomi [4/5]'
 # Hardware xiaomi
