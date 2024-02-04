@@ -898,6 +898,8 @@ vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so|a46bc3a7
 vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so|8c409c8f133ff9ac5cae2eeccb5459cafc400677
 vendor/lib/libdolbyottcameracontrol.so|3758b2541004c5d9a2935ed134afbabb66d6a315
 vendor/lib/libdovi.so|9be16854b12746669e84745d13fe26dd615760ba
+vendor/lib/libcodec2_soft_common.so|783b7d729c2c28b6ca55e5e2b5d1b257386bb866
+vendor/lib/libsfplugin_ccodec_utils.so|b2f8a37a993acd1e5d2a345b74c4f62753b10151
 
 # DRM
 vendor/bin/qseecomd
