@@ -28,4 +28,9 @@ echo 'Cloning vili Firmware'
 rm -rf vendor/xiaomi/vili-firmware
 git clone --depth=1 https://gitlab.com/ThatMalayaliDeb/vendor_xiaomi_vili-firmware.git -b 13.0 vendor/xiaomi/vili-firmware
 
+# Cloning Display HALs
+echo 'Cloning Display HALs'
+rm -rf hardware/qcom-caf/sm8350/display
+git clone https://github.com/ThatMalayaliDeb/android_hardware_qcom_display.git -b 14 hardware/qcom-caf/sm8350/display
+
 echo 'Completed, Now proceeding to lunch'
