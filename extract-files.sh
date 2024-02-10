@@ -55,11 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/hw/dolbycodec2)
-            patchelf --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "${2}"
-            patchelf --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl@1.0.stock.so "${2}"
-            patchelf --add-needed "libshim.so" "${2}"
-            ;;
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
@@ -101,10 +96,9 @@ function blob_fixup() {
         vendor/lib64/hw/camera.xiaomi.so)
             "${SIGSCAN}" -p "50 07 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
-        vendor/lib/libstagefright_soft_ac4dec.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefrightdolby.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefright_soft_ddpdec.so | vendor/lib64/libstagefrightdolby.so)
+        vendor/lib64/c2.dolby.avc.dec.so | vendor/lib64/c2.dolby.avc.sec.dec.so | vendor/lib64/c2.dolby.egl.so | vendor/lib64/c2.dolby.hevc.dec.so | vendor/lib64/c2.dolby.hevc.enc.so | vendor/lib64/c2.dolby.hevc.sec.dec.so | vendor/lib64/libdolbyvision.so | vendor/lib/libstagefright_soft_ac4dec.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefrightdolby.so | vendor/lib/libcodec2_soft_common.so | vendor/lib/libsfplugin_ccodec_utils.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefright_soft_ddpdec.so | vendor/lib64/libstagefrightdolby.so)
             grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
-            ;;
-    esac
+            ;;    esac
 }
 
 # Initialize the helper
