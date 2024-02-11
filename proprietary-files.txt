@@ -883,23 +883,26 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# Media (Dolby Vision) - from star V13.0.5.0.SKAEUXM
-vendor/bin/hw/dolbycodec2|5da57f0965cedbeae755ba6a7195b3d87e6cd9f5
-vendor/etc/dolby_vision.cfg|6f7476b07203b090fc5245a36ad6b3f463a4bc5b
-vendor/etc/init/dolbycodec2.rc|1ea8b363e94fd4f5410cadceb30de8229fb38045
-vendor/lib/c2.dolby.avc.dec.so|e19922091dceeddaa8ccdd8e657184dfbbe19b99
-vendor/lib/c2.dolby.avc.sec.dec.so|6cf67a7cb83b0403adc7b96edf96ad45afea4a4c
-vendor/lib/c2.dolby.client.so|33b96ef37f0708f44b3726ef376bc64722d2ed58
-vendor/lib/c2.dolby.egl.so|8d1710568a36178e1742113668626d37d8173c8a
-vendor/lib/c2.dolby.hevc.dec.so|4fdca4b315fbb67d81efdedc61e146f05c1e5eec
-vendor/lib/c2.dolby.hevc.sec.dec.so|60c3e20164c9ff0ee74dce3e1f88cf644ee31961
-vendor/lib/c2.dolby.store.so|08d26054d08062a508e53ad2751baa8590a6d3cf
-vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so|a46bc3a7d782515ec5a5e990912e2bd57ccf131b
-vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so|8c409c8f133ff9ac5cae2eeccb5459cafc400677
-vendor/lib/libdolbyottcameracontrol.so|3758b2541004c5d9a2935ed134afbabb66d6a315
-vendor/lib/libdovi.so|9be16854b12746669e84745d13fe26dd615760ba
-vendor/lib/libcodec2_soft_common.so|783b7d729c2c28b6ca55e5e2b5d1b257386bb866
-vendor/lib/libsfplugin_ccodec_utils.so|b2f8a37a993acd1e5d2a345b74c4f62753b10151
+# Media (Dolby Vision)
+system/lib/libdolbyottcontrol.so|b0e516c651dc66a699b2f43050a4d5682dc9e773
+system/lib/libdovi_omx.so|e8f265afe653cd12a613977806d44685154c4870
+system/lib64/libdolbyottcontrol.so|10faf714d85d6b1ee34991481d9a7f727dfa8d5f
+system/lib64/libdovi_omx.so|0a18e95caadc7b524044f5c3b3f7ec2efe9b2fe1
+vendor/bin/hw/dolbycodec2|ea6ec316c68f016f9c516c7799a35143f29eb9e9
+vendor/etc/dolby_vision.cfg|e7865b501dcee5f6c2921eb7829e2f7c8392b5d6
+vendor/etc/init/dolbycodec2.rc|97f1f3d6dd7bcd52a66257468559b66b60f32541
+vendor/lib64/c2.dolby.avc.dec.so|c231197f70da53ca6138faf9721091988f13d0e5
+vendor/lib64/c2.dolby.avc.sec.dec.so|0f6245545d0b390759f74ba3b83794705f19277f
+vendor/lib64/c2.dolby.client.so|1ff188ae4e62e89d38f2902f2076018a52527147
+vendor/lib64/c2.dolby.egl.so|cdc6801d55d7f2740f689a2fa6101c06a85af3ba
+vendor/lib64/c2.dolby.hevc.dec.so|1ec0e4dcdfa914a1e257e7fff627dcfabae2060c
+vendor/lib64/c2.dolby.hevc.enc.so|ed5f6d344bcbe961f5cc4189943b899a55ec74d0
+vendor/lib64/c2.dolby.hevc.sec.dec.so|9e775a601c87532bb68374ddc222e70f0c596980
+vendor/lib64/c2.dolby.store.so|184bcadc12a2aee363d086490fdfb6c5271ac10e
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so|91d8d277ee9b69e10094240eee863c932c81ba30
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so|95e8e48e864329f932642c0e1de88c1ecba68d96
+vendor/lib64/libdolbyottcameracontrol.so|8cd61fa1d09464710d570e66ee466567d6fb9060
+vendor/lib64/libdolbyvision.so|4707cff12ebcc9093c0e0bf28ff0c72a5c948c5d
 
 # DRM
 vendor/bin/qseecomd
