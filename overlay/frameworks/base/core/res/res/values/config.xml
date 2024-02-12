@@ -633,4 +633,6 @@
     <bool name="config_enableShellMainThread">true</bool>
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+    <!-- Device model (Build.MODEL) to spoof for netflix -->
+    <string name="config_netflixSpoofModel" translatable="false">23049PCD8G</string>
 </resources>
