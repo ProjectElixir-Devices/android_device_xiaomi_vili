@@ -74,9 +74,6 @@ persist.vendor.vonr_setting_support=1
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
-# WFD
-persist.debug.wfd.enable=1
-
 # Better Ram
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
