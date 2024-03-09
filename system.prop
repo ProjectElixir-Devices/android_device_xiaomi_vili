@@ -25,6 +25,10 @@ debug.hwui.target_cpu_time_percent=20
 # Display
 ro.sf.force_hwc_brightness=1
 
+# Fling velocities
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
